@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <Title>Galeria</Title>
+
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+<!--CSS Link-->
+        <link rel="stylesheet" type="text/css" href="css\galeria.css">
+<!--Box icon-->
+<!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    </head>
+<!--Cuerpo-->
+    <body>
+        <header>
+            <a href="index.html" class="logo"><i class="ri-heart-fill"></i>Inicio</a>
+
+            <ul class="navbar">
+                <li><a href="razones.html">Razones</a></li>
+                <li><a href="momentos.html" class="active">Momentos</a></li>
+                <li><a href="cartas.html">Cartas</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+
+            <div class="header-icons"> 
+                <i class=''></i>
+            </div class="bx bx-menu" id="menu-icon">
+        </header>
+<!--Home1-->
+        <section class="home">
+            <div class="home-img">
+                <img src="images/carta7a1.jpg" class="one" width="400" style="border-radius: 15px;">
+            </div>
+
+            <div class="home-text">
+                <h1>Ensayo graduacion</h1>
+                <h3>09/07/23</h3>
+                <h5>Holap, sinceramente te adoro demasiado, me siento amarrado a ti no tengo la menor idea de por que pero tu me das las ganas de seguir adelante, quiero que me veas 
+                    completando todas mis metas y viceversa, quiero estar a tu lado cuando seas completamente feliz, me da mucho gusto cuando platicas conmigo y me llamas para contarme como vas.<br>
+                    Gracias por estar a mi lado siempre, gracias por salvarme, gracias por todo, te debo un favor enorme, me gustaria poder quitar esas partes feas de mi para poder 
+                    hacerte sentir lo que eres, una princesa, intentare hacerlo aun mejor, a pesar de que eres mi novia y que tenemos una relacion algo formal quiero seguir conquistandote 
+                    por si algun dia llegas a dejarme que no te conformes con tan poco y que solo aceptes lo que te mereces, todo.<br>
+                    Me gusta mucho presumirte y hablar de ti, me llena de emocion el simple hecho de que tu y yo somos la pareja que siempre desee, no sabes las veces 
+                    que soñe con conocer una persona como ti, nunca habia tenido la oportunidad de hablar con alguien como tu hasta ahora.<br>
+                    Te amo bruja!</h5> 
+
+            </div>
+        </section>
+<!--Fotos chiquitas-->
+        <div class="main">
+            <div class="row">
+                <li><img src="images/carta7a1.jpg" width="400" style="border-radius: 15px;" onclick="slider('images/carta7a1.jpg')"></li>
+            </div>
+        </div>
+
+        <a href="carta4.html" class="bottom">Siguiente<i class='bx bx-down-arrow-circle'></i></a>
+
+        <script type="text/javascript">
+            function slider(anything){ 
+            document.querySelector('.one').src = anything;
+            }; 
+
+            let menu = document.querySelector('#menu-icon')
+            let navbar = document.querySelector('.navbar')
+
+            menu.onclick = () => {
+                menu.classList.toggle('bx-x')
+                navbar.classList.toggle('open')
+            }
+        </script>
+    </body>
+</html>

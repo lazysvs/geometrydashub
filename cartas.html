@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <Title>Cartas</Title>
+
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+<!--CSS Link-->
+        <link rel="stylesheet" type="text/css" href="css\cartas.css">
+<!--Box icon-->
+<!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    </head>
+<!--Cuerpo-->
+    <body>
+        <header>
+            <a href="index.html" class="logo"><i class="ri-heart-fill"></i>Inicio</a>
+
+            <ul class="navbar">
+                <li><a href="razones.html">Razones</a></li>
+                <li><a href="momentos.html" >Momentos</a></li>
+                <li><a href="cartas.html" class="active">Cartas</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+
+            <div class="header-icons"> 
+                <i class=''></i>
+            </div class="bx bx-menu" id="menu-icon">
+        </header>
+<!--Home1-->
+        <section class="home">
+            <div class="home-img">
+                <img src="" class="one" width="400" style="border-radius: 15px;">
+            </div>
+
+            <div class="home-text">
+                <h1>Carta #1</h1>
+                <h4>
+                   
+                </h4>
+
+            </div>
+        </section>
+
+        <a href="razon2.html" class="bottom">Siguiente<i class='bx bx-down-arrow-circle'></i></a>
+
+        <script type="text/javascript">
+            function slider(anything){ 
+            document.querySelector('.one').src = anything;
+            }; 
+
+            let menu = document.querySelector('#menu-icon')
+            let navbar = document.querySelector('.navbar')
+
+            menu.onclick = () => {
+                menu.classList.toggle('bx-x')
+                navbar.classList.toggle('open')
+            }
+        </script>
+    </body>
+</html>

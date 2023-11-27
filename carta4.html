@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <Title>Galeria</Title>
+
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+<!--CSS Link-->
+        <link rel="stylesheet" type="text/css" href="css\galeria.css">
+<!--Box icon-->
+<!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    </head>
+<!--Cuerpo-->
+    <body>
+        <header>
+            <a href="index.html" class="logo"><i class="ri-heart-fill"></i>Inicio</a>
+
+            <ul class="navbar">
+                <li><a href="razones.html">Razones</a></li>
+                <li><a href="momentos.html" class="active">Momentos</a></li>
+                <li><a href="cartas.html">Cartas</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+
+            <div class="header-icons"> 
+                <i class=''></i>
+            </div class="bx bx-menu" id="menu-icon">
+        </header>
+<!--Home1-->
+        <section class="home">
+            <div class="home-img">
+                <img src="images\carta8a2.jpg" class="one" width="400" style="border-radius: 15px;">
+            </div>
+
+            <div class="home-text">
+                <h1>Baile de graduacion</h1>
+                <h3>22/07/23</h3>
+                <h5>Ensaye mucho para ese dia, curiosamente amo la musica y amo ir a conciertos o escuchar musica a todo volumen pero me desagrada la idea de bailar, siento que 
+                    no va conmigo, nunca habia siquiera intentado bailar pero semanas antes yo te habia prometido que iba a bailar contigo y lo cumpli, despues de 15 años, por 
+                    primera vez en mi vida baile, efectivamente, no me gusto pero no descartaria el salir contigo a otro baile, sin importar lo poco o mucho que bailamos disfrute estar contigo
+                    y disfrute verte, me gusto sentirme aceptado en tu familia. 
+                </h5> 
+
+            </div>
+        </section>
+<!--Fotos chiquitas-->
+<div class="main">
+    <div class="row">
+        <li><img src="images\carta8a2.jpg" width="400" style="border-radius: 15px;" onclick="slider('images/carta8a2.jpg')"></li>
+    </div>
+
+    <div class="row row2">
+        <li><img src="images\carta8a1.jpg" width="400" style="border-radius: 15px;" onclick="slider('images/carta8a1.jpg')"></li>
+    </div>
+
+    <div class="row row3">
+        <li><img src="images\carta8a3.jpg" onclick="slider('images/carta8a3.jpg')"></li>
+    </div>
+</div>
+        <a href="carta5.html" class="bottom">Siguiente<i class='bx bx-down-arrow-circle'></i></a>
+
+        <script type="text/javascript">
+            function slider(anything){ 
+            document.querySelector('.one').src = anything;
+            }; 
+
+            let menu = document.querySelector('#menu-icon')
+            let navbar = document.querySelector('.navbar')
+
+            menu.onclick = () => {
+                menu.classList.toggle('bx-x')
+                navbar.classList.toggle('open')
+            }
+        </script>
+    </body>
+</html>

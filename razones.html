@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <Title>Galeria</Title>
+
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+<!--CSS Link-->
+        <link rel="stylesheet" type="text/css" href="css\razones.css">
+<!--Box icon-->
+<!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    </head>
+<!--Cuerpo-->
+    <body>
+        <header>
+            <a href="index.html" class="logo"><i class="ri-heart-fill"></i>Inicio</a>
+
+            <ul class="navbar">
+                <li><a href="razones.html" class="active">Historia</a></li>
+                <li><a href="momentos.html" >Memes</a></li>
+            </ul>
+
+            <div class="header-icons"> 
+                <i class=''></i>
+            </div class="bx bx-menu" id="menu-icon">
+        </header>
+<!--Home1-->
+        <section class="home">
+            <div class="home-img">
+                <img src="" class="one" width="400" style="border-radius: 15px;">
+            </div>
+
+            <div class="home-text">
+                <h1>Historia</h1>
+                <h3>Geometry Dash es un videojuego de plataformas creado en 2013 por el programadorsueco Robert Topala (conocido también como RobTop), y posteriormente desarrollado por su empresa independiente RobTop Games. Su lanzamiento se produjo el 13 de agosto de 2013 para dispositivos móviles, y el 24 de diciembre de 2014 para la plataforma de distribución digital Steam.</h3>
+
+            </div>
+        </section>
+
+      
+        <script type="text/javascript">
+            function slider(anything){ 
+            document.querySelector('.one').src = anything;
+            }; 
+
+            let menu = document.querySelector('#menu-icon')
+            let navbar = document.querySelector('.navbar')
+
+            menu.onclick = () => {
+                menu.classList.toggle('bx-x')
+                navbar.classList.toggle('open')
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <Title>Galeria</Title>
+
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+<!--CSS Link-->
+        <link rel="stylesheet" type="text/css" href="css\galeria.css">
+<!--Box icon-->
+<!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    </head>
+<!--Cuerpo-->
+    <body>
+        <header>
+            <a href="index.html" class="logo"><i class="ri-heart-fill"></i>Inicio</a>
+
+            <ul class="navbar">
+                <li><a href="razones.html">Razones</a></li>
+                <li><a href="momentos.html" class="active">Momentos</a></li>
+                <li><a href="cartas.html">Cartas</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+
+            <div class="header-icons"> 
+                <i class=''></i>
+            </div class="bx bx-menu" id="menu-icon">
+        </header>
+<!--Home1-->
+        <section class="home">
+            <div class="home-img">
+                <img src="images\carta11a1.jpg" class="one" width="400" style="border-radius: 15px;">
+            </div>
+
+            <div class="home-text">
+                <h1>Casa, parque y catedral</h1>
+                <h3>03/08/23</h3>
+                <h5>Me dio mucho gusto el poderte ver casi todo el dia, desde las 4 hasta las 10, 6 horitas juntos, quizas con 1 o 2 personas de mal tercio jej pero juntos.<br>
+                    Tuvimos una "pelea" creo yo justificada pero no me agrado del todo, me gusto mucho que nos hayamos arreglado pero no me gusto que tus hernmanos no nos hayan 
+                    dado espacio de hablarlo, igual no me gusto que uno de ellos la ocasiono pero bueno. <br> 
+                    De cualquier forma me gusto mucho que hayamos visto una pelicula, que hayamos estado en el parque y que fuimos a catedral.<br>
+                    Me dio risita el viejito que nos vendio el arreglo de las flores, no me espere que aceptara transferencia pero bueeenoo, lo importante es que tuviste tu arreglito. <br>
+                    Te amo mucho y me encanta demasiado como nos comimos a besitos por mucho tiempo, tambien me dio mucha risa que la perrita no se nos despegaba, ojala mas dias asi. 
+                </h5> 
+
+            </div>
+        </section>
+<!--FoFotos chiquitas-->
+<div class="main">
+    <div class="row">
+        <li><img src="images\carta11a1.jpg" width="400" style="border-radius: 15px;" onclick="slider('images/carta11a1.jpg')"></li>
+    </div>
+
+    <div class="row row2">
+        <li><img src="images\carta11a2.jpg" width="400" style="border-radius: 15px;" onclick="slider('images/carta11a2.jpg')"></li>
+    </div>
+
+    <div class="row row3">
+        <li><img src="images\carta11a3.jpg" onclick="slider('images/carta11a3.jpg')"></li>
+    </div>
+
+    <div class="row row4">
+        <li><img src="images\carta11a4.jpg" onclick="slider('images/carta11a4.jpg')"></li>
+    </div>
+</div>
+
+<!--       <a href="###" class="bottom">Siguiente<i class='bx bx-down-arrow-circle'></i></a> -->  
+
+        <script type="text/javascript">
+            function slider(anything){ 
+            document.querySelector('.one').src = anything;
+            }; 
+
+            let menu = document.querySelector('#menu-icon')
+            let navbar = document.querySelector('.navbar')
+
+            menu.onclick = () => {
+                menu.classList.toggle('bx-x')
+                navbar.classList.toggle('open')
+            }
+        </script>
+    </body>
+</html>
